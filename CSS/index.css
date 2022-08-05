@@ -1,3 +1,7 @@
+:root {
+    scroll-behavior: smooth;
+}
+
 .body {
     background-color: #20232a;
     color: #ffff;
@@ -7,6 +11,37 @@
 
 .header {
     background-color: #50232a;
-    margin: 2rem;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*border-bottom: 0.0625rem solid #fff8;*/
+    box-shadow: 0 0 0 0.0625rem #fff8;
+    padding: 2rem;
+}
+
+.header-nav {
+    padding: 1rem 0;
+}
+
+.header-container {
+    display: flex;
+    padding: 0 1rem;
+}
+
+.header-nav__link-logo-container {
+    background-color: #ffff;
+    display: flex;
+    width: 108px;
+    height: 32px;
+}
+
+.header-nav__link-logo {
+    background-color: black;
+    width: 108px;
+    height: 32px;
+}
+
+.header-nav__menu-list-container {
+    display: flex;
 }
