@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="shortcut icon" href="">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./ICO/main.ico">
     <link rel="stylesheet" href="./CSS/index.css">
     <title>PRESENTACIÓN CARLOS</title>
 </head>
@@ -17,45 +18,45 @@
             <div class="header-container">
                 <a href="#">
                     <a href="#iHero" class="header-nav__link-logo-container">
-                        <img src="#" alt="LOGO CARLOS"  width="108" height="32" class="header-nav__link-logo">
+                        <img src="#" alt="LOGO CARLOS" width="108" height="32" class="header-nav__link-logo">
 
-                </a>
-                <ul class="header-nav__menu-list-container">
-                    <li>
-                        <a href="#">PROYECTOS</a>
-                    </li>
-                    <li>
-                        <a href="#">CONTACTOS</a>
-                    </li>
-                    <li>
-                        <a href="#">CARLOS</a>
-                    </li>
-                </ul>
+                    </a>
+                    <ul class="header-nav__menu-list-container">
+                        <li>
+                            <a href="#iExperience" class="header-nav__menu-link">EXPERIENCIA</a>
+                        </li>
+                        <li>
+                            <a href="#iContact" class="header-nav__menu-link">CONTACTO</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header-nav__menu-link--active">CARLOS</a>
+                        </li>
+                    </ul>
             </div>
         </nav>
     </header>
     <main>
-        <article id="iHero">
-            <div>
-                <div>
-                    <h1>PRESENTACIÓN CARLOS</h1>
+        <article class="i-hero" id="iHero">
+            <div class="i-hero__container">
+                <div class="i-hero__info-container">
+                    <h1 class="i-hero__info-title">PRESENTACIÓN CARLOS</h1>
                     <h2>presentación de caracteristicas tipo curriculum</h2>
-                     <p>
+                    <p class="i-hero__info-paragrahp">
                         Es el mejor lugar donde se puede aprender desarrollo
                         y potencias conocimientos.
-                     </p>   
-                      <a href="#">Aprender gratis!</a>
-                      <a href="#" class="hero__info-link">Aprender gratis</a>
+                    </p>
+                    <a href="#">Aprender gratis!</a>
+                    <a href="#" class="hero__info-link">Aprender gratis</a>
 
                 </div>
-                <div>
-                    <div>
-                        <img src="#" alt="">
-                        <figure>
-                        <img src="#" alt="">
-                        <img src="#" alt="">
-                        <img src="#" alt="">
-                        <img src="#" alt="">
+                <div class="i-hero__img-container">
+                    <div class="i-hero__img-pro-tech-container">
+                        <img src="./IMAGENES/main.png" alt="" class="i-hero__img-pro">
+                        <figure class="i-hero__img-tech-container">
+                            <img src="./SVG/css-svgrepo-com.svg" alt="CSS" width="64"  height="64"  class="i-hero__img-tech">
+                            <img src="./SVG/html-svgrepo-com.svg" alt="HTML" width="64" height="64" class="i-hero__img-tech">
+                            <img src="./SVG/js-svgrepo-com.svg" alt="JS" width="64" height="64" class="i-hero__img-tech">
+                            <img src="./SVG/react-svgrepo-com.svg" alt="REACT" width="64" height="64" class="i-hero__img-tech">
                         </figure>
                     </div>
                 </div>
@@ -63,7 +64,7 @@
         </article>
         <section>
             <div>
-                <h2>EXPERIENCIA</h2>
+                <h2 id="iExperience">EXPERIENCIA</h2>
                 <table>
                     <thead>
                         <tr>
@@ -123,11 +124,11 @@
         <section>
             <div>
                 <h2>Contacto</h2>
-            <form>
-                <input type="text" name="name" placeholder="Nombre" maxlength="255" required />
-                <input type="number" name="phone" placeholder="Celular" min="900000000" max="9999999999" required>
-                <button>Enviar</button>
-            </form>
+                <form>
+                    <input type="text" name="name" placeholder="Nombre" maxlength="255" required />
+                    <input type="number" name="phone" placeholder="Celular" min="900000000" max="9999999999" required>
+                    <button>Enviar</button>
+                </form>
             </div>
         </section>
     </main>
@@ -162,8 +163,9 @@
                     </li>
                 </ul>
                 <h2>
-                    🦄Copyright &copy; 2022 
-                    <a href="https://www.linkedin.com/check/add-phone?country_code=pe" target="_blank" rel="noopener noreferrer">
+                    🦄Copyright &copy; 2022
+                    <a href="https://www.linkedin.com/check/add-phone?country_code=pe" target="_blank"
+                        rel="noopener noreferrer">
                         CARLOSSLOGAN
                     </a>
                     Todos los derechos reservados🦄
@@ -172,4 +174,5 @@
         </nav>
     </footer>
 </body>
+
 </html>
