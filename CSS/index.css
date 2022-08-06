@@ -1,3 +1,10 @@
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 :root {
     scroll-behavior: smooth;
 }
@@ -86,10 +93,12 @@
     display: flex;
     align-items: center;
     /*justify-content: center;*/
+    overflow: hidden;
     height: 100vh;
     background-position: center;
     background-size: cover;
     background-image: url("../IMAGENES/bg-hero-react-galaxy.webp")
+    
     
 }
 .i-hero::before {
@@ -166,18 +175,92 @@
 
 .i-hero__img-container {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     justify-content: center;
 }
 .i-hero__img-pro-tech-container {
-
+    position: relative;
 }
 .i-hero__img-pro {
+    background-color: #00000080;
     border-radius: 50%;
     width: 256px;
     height: 256px;
 }
+
+
+
 .i-hero__img-tech-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background-color: #fff8;*/
     margin: 0;
+    /*transition: all 5s linear;*/
+    animation: spin 10s linear 0s infinite normal forwards;
 }
-.i-hero__img-tech {}
+
+/*.i-hero__img-tech-container:hover {
+    transform: rotate(360deg);
+}*/
+
+.i-hero__img-tech {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    /*transform: translate(-50%, -50%);*/
+}
+
+.i-hero__img-tech:nth-child(1) {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    
+}
+.i-hero__img-tech:nth-child(2) {
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%) rotate(90deg);
+
+}
+
+.i-hero__img-tech:nth-child(3) {
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+
+}
+
+.i-hero__img-tech:nth-child(4) {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(100deg);
+
+}
+
+
+@media (min-width: 768px) {
+
+    .i-hero__container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0.75rem;
+    }
+    .i-hero__container {
+        max-width: 448px;
+        
+    }
+    .i-hero__info-title {
+        font-size: 1.75rem;
+    }
+    .i-hero__info-subtitle {
+        font-size: 1.5rem;
+    }
+    .i-hero__info-paragrahp {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0.75rem;
+    }
+}
